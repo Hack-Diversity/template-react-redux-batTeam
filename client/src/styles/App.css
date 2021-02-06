@@ -1,0 +1,100 @@
+.app--main {
+  text-align: center;
+  background-color:rgb(229, 229, 229);
+  position:relative;
+  /*change with correct rgb from template*/
+}
+
+.app--logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .app--logo {
+    animation: app--logo-spin infinite 20s linear;
+  }
+}
+
+.app--header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+@keyframes app--logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.view-container {
+    overflow: auto;
+    background-color:;
+    /*change to inherit from correct main color above*/
+}
+
+.page-layout--container{
+  background-color: rgb(210, 180, 140, 0.3);
+  height:100%;
+  width:100%;
+  /*change to inherit from correct main color above*/
+}
+
+.page-layout--newItems{
+  position:relative;
+  display:block;
+  margin:13px;
+  text-align:left;
+}
+
+.app-hours--description{
+  border-top:2px solid gray;
+  font-size:1.2rem;
+  text-align:center;
+  margin-top:1rem;
+  font-family: Copperplate Gothic Light;
+}
+
+.app-location--description{
+  border-bottom:2px solid gray;
+  font-size:1.2rem;
+  text-align:center;
+  margin-top:1rem;
+  font-family: Copperplate Gothic Light;
+}
+
+.app--book--container{
+  width:100%;
+  position:relative;
+  margin:2px; display:inline-grid;
+  background-color: lightblue;
+}
+
+.app--book{
+  height:150px;
+  margin:5px; padding:5px;
+  display:block;
+  background-color:orange;
+}
+
+.leftPad{
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .app--book {
+    min-height:15vw;
+    /* animation: app--logo-spin infinite 20s linear; */
+  }
+}
