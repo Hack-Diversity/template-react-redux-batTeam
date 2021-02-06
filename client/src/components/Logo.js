@@ -4,7 +4,11 @@ import styled from 'styled-components';
 
 import logo from '../styles/assets/logo.svg';
 
+<<<<<<< HEAD
  const Wrapper = styled.a.attrs({
+=======
+const Wrapper = styled.a.attrs({
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
     className: 'navbar-brand',
 })``;
 

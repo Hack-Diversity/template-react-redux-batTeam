@@ -28,6 +28,7 @@ a {
 }
 
 a:hover,
+<<<<<<< HEAD
 .delete-item-btn:hover{
     opacity: 0.7;
     text-decoration: none;
@@ -37,3 +38,9 @@ a:hover,
   width:20px; height:20px;
   background-color:green;
 }
+=======
+.delete-item-btn:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba

@@ -1,8 +1,11 @@
 .app--main {
   text-align: center;
+<<<<<<< HEAD
   background-color:rgb(229, 229, 229);
   position:relative;
   /*change with correct rgb from template*/
+=======
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
 }
 
 .app--logo {
@@ -10,8 +13,11 @@
   pointer-events: none;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
 @media (prefers-reduced-motion: no-preference) {
   .app--logo {
     animation: app--logo-spin infinite 20s linear;
@@ -24,9 +30,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+<<<<<<< HEAD
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: black;
+=======
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
 }
 
 @keyframes app--logo-spin {
@@ -40,6 +52,7 @@
 
 .view-container {
     overflow: auto;
+<<<<<<< HEAD
     background-color:;
     /*change to inherit from correct main color above*/
 }
@@ -97,4 +110,6 @@
     min-height:15vw;
     /* animation: app--logo-spin infinite 20s linear; */
   }
+=======
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
 }

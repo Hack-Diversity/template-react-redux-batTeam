@@ -9,12 +9,21 @@ export const fetchAllItems = () => {
 
         return api.getAllItems()
             .then(resp => {
+<<<<<<< HEAD
                 const { books } = resp.data;
                 console.log("getAllItems: resp");
                 console.log(books);
                 dispatch({
                     type: types.SET_ALL_ITEMS,
                     books,
+=======
+                const { items } = resp.data;
+                console.log("getAllItems: resp");
+                console.log(items);
+                dispatch({
+                    type: types.SET_ALL_ITEMS,
+                    items,
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
                 });
             })
             .catch(err => {
@@ -25,6 +34,7 @@ export const fetchAllItems = () => {
     };
 };
 
+<<<<<<< HEAD
 export const fetchSingleItem = (itemIsbn) => {
     return (dispatch) => {
         dispatch({ type: types.LOADING_SINGLE_ITEM });
@@ -32,6 +42,15 @@ export const fetchSingleItem = (itemIsbn) => {
         return api.getItemByIsbn(itemIsbn)
             .then(resp => {
                 console.log("getItemByIsbn: resp");
+=======
+export const fetchSingleItem = (itemId) => {
+    return (dispatch) => {
+        dispatch({ type: types.LOADING_SINGLE_ITEM });
+
+        return api.getItemById(itemId)
+            .then(resp => {
+                console.log("getItemById: resp");
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
                 console.log(resp);
                 if (resp.data.success) {
                     const { item } = resp.data;
@@ -63,7 +82,11 @@ export const insertSingleItem = item => {
                     dispatch({
                         type: types.SET_SINGLE_ITEM,
                         item: {
+<<<<<<< HEAD
                             isbn: resp.data.isbn,
+=======
+                            _id: resp.data.id,
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
                             ...newItem
                         }
                     });
@@ -82,7 +105,11 @@ export const updateSingleItem = item => {
     return (dispatch) => {
         dispatch({ type: types.LOADING_SINGLE_ITEM });
 
+<<<<<<< HEAD
         return api.updateItemByIsbn(item.isbn, item)
+=======
+        return api.updateItemById(item._id, item)
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
             .then(resp => {
                 console.log("updateItem: resp");
                 console.log(resp);
@@ -91,7 +118,11 @@ export const updateSingleItem = item => {
                     dispatch({
                         type: types.UPDATE_SINGLE_ITEM,
                         item: {
+<<<<<<< HEAD
                             isbn: resp.data.isbn,
+=======
+                            _id: resp.data.id,
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
                             ...newItem
                         }
                     });
@@ -106,6 +137,7 @@ export const updateSingleItem = item => {
     };
 };
 
+<<<<<<< HEAD
 export const deleteSingleItem = itemIsbn => {
     return (dispatch) => {
         dispatch({ type: types.LOADING_SINGLE_ITEM });
@@ -113,6 +145,15 @@ export const deleteSingleItem = itemIsbn => {
         return api.deleteItemByIsbn(itemIsbn)
             .then(resp => {
                 console.log("deleteItemByIsbn: resp");
+=======
+export const deleteSingleItem = itemId => {
+    return (dispatch) => {
+        dispatch({ type: types.LOADING_SINGLE_ITEM });
+
+        return api.deleteItemById(itemId)
+            .then(resp => {
+                console.log("deleteItemById: resp");
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
                 console.log(resp);
                 dispatch({
                     type: types.RELOAD_ITEMS

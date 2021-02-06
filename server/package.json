@@ -20,7 +20,10 @@
         "body-parser": "^1.19.0",
         "cors": "^2.8.5",
         "express": "^4.17.1",
+<<<<<<< HEAD
         "mini-project-db-master": "file:../../template-mini-project-db-master",
+=======
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
         "mongoose": "^5.9.1",
         "nodemon": "^2.0.2"
     }

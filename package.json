@@ -30,9 +30,14 @@
         "@upstatement/prettier-config": "^0.3.0"
     },
     "dependencies": {
+<<<<<<< HEAD
         "bootstrap": "^4.6.0",
         "node-notifier": "^8.0.1",
         "object-path": "^0.11.5",
         "react-bootstrap": "^1.4.3"
+=======
+        "node-notifier": "^8.0.1",
+        "object-path": "^0.11.5"
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
     }
 }

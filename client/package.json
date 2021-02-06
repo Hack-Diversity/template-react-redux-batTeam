@@ -13,6 +13,7 @@
         "@testing-library/react": "^9.3.2",
         "@testing-library/user-event": "^7.1.2",
         "axios": "^0.21.1",
+<<<<<<< HEAD
         "http-server": "^0.12.3",
         "https": "^1.0.0",
         "mini-project-db-master": "file:../../template-mini-project-db-master",
@@ -22,6 +23,15 @@
         "react-redux": "^7.2.0",
         "react-router-dom": "^5.1.2",
         "react-scripts": "^3.4.4",
+=======
+        "bootstrap": "^4.4.1",
+        "https": "^1.0.0",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "react-redux": "^7.2.0",
+        "react-router-dom": "^5.1.2",
+        "react-scripts": "3.4.0",
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
         "react-table": "^7.6.2",
         "react-table-6": "^6.11.0",
         "redux": "^4.0.5",

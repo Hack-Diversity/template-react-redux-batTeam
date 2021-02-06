@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const PUBLICATION_YEAR = {
+=======
+const DAYS_OF_WEEK = {
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
     0: "Monday",
     1: "Tuesday",
     2: "Wednesday",
@@ -9,5 +13,9 @@ const PUBLICATION_YEAR = {
 };
 
 export const shared = {
+<<<<<<< HEAD
     PUBLICATION_YEAR,
+=======
+    DAYS_OF_WEEK,
+>>>>>>> 4160a3ef4b79e52d76f77db93767ca383a3660ba
 };
