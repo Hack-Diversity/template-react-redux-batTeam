@@ -12,7 +12,7 @@ import Booked from '../components/Booked';
 class Home extends Component{
   render(){
     return (
-      <ItemsList />
+      <Book />
   )};
 
 }
